@@ -3,11 +3,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { navLinks } from '@/constant/constant';
 import { HiBars3BottomRight } from 'react-icons/hi2';
-//@reference 
+
+
+//Define Props Type -- Props get passed as params to component
+type Props = {
+    openNav: ()=>void   //openNav type is a function that returns void
+}
 
 
 
-const Nav = () => {
+const Nav = ({openNav} : Props) => {
     return <div className={`fixed h-[8rem] z-[10] bg-blue-950 w-full`}>
         <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
             {/* Logo */}
@@ -29,7 +34,7 @@ const Nav = () => {
                         Hire Me
                     </button>
                     {/* Burger Menu for Mobile */}
-                    <HiBars3BottomRight className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
+                    <HiBars3BottomRight onClick={openNav} className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
                 </div>
             </div>
         </div>
