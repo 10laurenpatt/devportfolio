@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
     return <div className='bg-[#140c1c] rounded-lg p-4 sm:p-10'>
-        <h1 className='text-bg bg-linear-to-r from-[#8750f7] to-white text-transparent bg-clip-text inline-block text-3xl sm:text-4xl md:text-5xl mg:text-6xl xl:text-7xl font-bold md:leading-[3.5rem] xl:leading-[4rem]'>
+        <h1 className='text-bg bg-linear-to-r from-[#8750f7] to-white text-transparent bg-clip-text inline-block pb-3 text-3xl sm:text-4xl md:text-5xl mg:text-6xl xl:text-7xl font-bold md:leading-[3.5rem] xl:leading-[4rem]'>
             Let's Work Together
         </h1>
         <p className='text-gray-200 mt-3 lg:text-base text-xs md:text-sm'>
