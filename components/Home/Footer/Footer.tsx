@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { navLinks } from "@/constant/constant";
 
 const Footer = () => {
     return (
@@ -9,21 +10,12 @@ const Footer = () => {
                 <Image src='/images/logo.png' alt='logo' width={180} height={180} className='mx-auto'/>
             </div>
             <div className='flex items-center flex-wrap justify-center text-center gap-10 px-4 text-white font-bold'>
-                <div>
-                    Home
-                </div>
-                <div>
-                    Services
-                </div>
-                <div>
-                    Projects
-                </div>
-                <div>
-                    Reviews
-                </div>
-                <div>
-                    Contact
-                </div>
+                {navLinks.map((navlink) => {
+                        return (<Link key={navlink.id} href={navlink.url}>
+                            <p className="nav__link">{navlink.label}</p>
+                        </Link>
+                        );
+                    })}
             </div>
             <p className='text-white opacity-75 mt-6 text-center text-sm'>
                 Icons sourced from <Link href='https://github.com/devicons/devicon' className='text-blue-600 visited:text-purple-600 underline'>devicons</Link>

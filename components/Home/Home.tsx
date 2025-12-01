@@ -7,7 +7,7 @@ import Skills from './Skills/Skills';
 import Contact from './Contact/Contact';
 
 const Home = () => {
-    return <div className="overflow-hidden">
+    return <div className="overflow-hidden scroll-smooth">
         <div id='Hero'><Hero /></div>
         <div id='About'><About /></div>
         <div id='Services'><Services /></div>

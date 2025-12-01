@@ -47,7 +47,7 @@ const ContactForm = () => {
                 border-gray-200/15 outline-none'></textarea>
             <div className='mt-4'>
                 <button type='submit'
-                    className='px-8 py-3.5 bg-[#7947df] text-white hover:bg-[#5c2fb7] transition-all duration-300
+                    className='px-8 py-3.5 bg-[#7947df] text-white hover:bg-[#5c2fb7] transition-all duration-300 cursor-pointer
                     rounded-full'>Send Message</button>
             </div>
         </form>
