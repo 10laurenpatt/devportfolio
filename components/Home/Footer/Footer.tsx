@@ -5,9 +5,9 @@ import { navLinks } from "@/constant/constant";
 
 const Footer = () => {
     return (
-        <div className='py-16 bg-[#0f0715]'>
+        <div className='py-16 bg-[#0f0715] space-y-10'>
             <div>
-                <Image src='/images/logo.png' alt='logo' width={180} height={180} className='mx-auto'/>
+                <p className='text-white exo-2-logo text-3xl tracking-tight text-center mb-4'>Lauren Patterson</p>
             </div>
             <div className='flex items-center flex-wrap justify-center text-center gap-10 px-4 text-white font-bold'>
                 {navLinks.map((navlink) => {
