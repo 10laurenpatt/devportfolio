@@ -1,14 +1,22 @@
 import React from 'react'
 import Home from '@/components/Home/Home';
+import { getProjectById } from "@/sanity/sanity-utils";
+import Image from 'next/image';
+import { headers } from 'next/headers';
+import ProjectView from '../ProjectView';
 
-const ProjectPage = () => {
+
+
+export default async function ProjectPage({params} : {params: {projectId: string}}) {
+
+  const projectId =  params.projectId;
+
+  const project = await getProjectById(projectId)
+
 
   return (
-  <div className=''>
-    Insert Project Here
-  </div>
+    <ProjectView project={project} />
   );
 
 };
 
-export default ProjectPage;
