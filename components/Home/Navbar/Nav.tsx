@@ -15,30 +15,12 @@ type Props = {
 
 const Nav = ({ openNav }: Props) => {
 
-    const [navBg, setNavBg] = useState(false)
 
-    useEffect(() => {
-        const handler = () => {
-            if (window.scrollY >= 90) {
-                setNavBg(true)
-            }
-            if (window.scrollY < 90) {
-                setNavBg(false);
-            }
-        }
 
-        window.addEventListener("scroll", handler)
-
-        return () => {
-            window.removeEventListener("scroll", handler)
-        }
-
-    }, [])
-
-    return <div className={`fixed ${navBg ? 'bg-[#240b39]' : 'fixed'} h-[12vh] z-[10] w-full transition-all duration-200`}>
+    return <div className={`fixed bg-[#240b39] h-[12vh] z-[10] w-full transition-all duration-200`}>
         <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
             {/* Logo */}
-            <p className='text-white exo-2-logo text-3xl tracking-tight'>Lauren Patterson</p>
+            <p className='text-white exo-2-logo text-md md:text-3xl tracking-tight'>Lauren Patterson</p>
 
             {/* Nav Links */}
             <div className="flex items-center space-x-10">
@@ -56,7 +38,7 @@ const Nav = ({ openNav }: Props) => {
                 <div className='flex items-center space-x-4'>
                     <Link
                         href='#Contact'
-                        className='md:px-10 md:py-3 px-8 py-3 text-blue-800 font-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg'>
+                        className=' px-4 py-3 md:px-10 md:py-3 text-blue-800 font-semibold text-sm sm:text-base  bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg'>
                         Contact Me
                     </Link>
                     {/* Burger Menu for Mobile */}

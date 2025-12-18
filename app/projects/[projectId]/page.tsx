@@ -7,15 +7,15 @@ import ProjectView from '../ProjectView';
 
 
 
-export default async function ProjectPage({params} : {params: {projectId: string}}) {
+export default async function ProjectPage({ params }: { params: { projectId: string } }) {
 
-  const projectId =  params.projectId;
+  const projectId = await params.projectId;
 
   const project = await getProjectById(projectId)
 
 
   return (
-    <ProjectView project={project} />
+      <ProjectView project={project} />
   );
 
 };
