@@ -37,14 +37,14 @@ const About = () => {
                             <div className='w-7 h-7 bg-blue-800 flex flex-col items-center justify-center'>
                                 <FaCheck className='text-white' />
                             </div>
-                            <p className='text-sm sm:text-base md:text-lg font-bold text-gray-300'>Full Stack Development</p>
+                            <p className='text-sm sm:text-base md:text-lg font-bold text-gray-300'>UI/UX Design Experience</p>
                         </div>
                     </div>
                 </div>
                 {/* Stats Content */}
                 <div className='grid grid-cols-2 gap-16 items-center lg:mx-auto'>
                     {/* 4 Stats w/ Icon */}
-                    <div>
+                    {/* <div>
                         <Image src='/images/customer.png' alt='image' width={80} height={80} className='mx-auto' />
                         <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.client}</p>
                         <p className='text-base sm:text-lg text-gray-400 text-center'>Satisfied Customers</p>
@@ -63,7 +63,7 @@ const About = () => {
                         <Image src='/images/rocket.png' alt='image' width={80} height={80} className='mx-auto' />
                         <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.website}</p>
                         <p className='text-base sm:text-lg text-gray-400 text-center'>Websites Launched</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

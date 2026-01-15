@@ -22,7 +22,7 @@ const Hero = () => {
                             Software Developer
                         </h1>
                         {/* Description */}
-                        <p className='mt-6 text-sm md:text-base text-white opacity-60'>{BaseInfo.description}</p>
+                        <p className='mt-6 text-sm sm:text-md md:text-xl text-white opacity-80'>{BaseInfo.description}</p>
 
                         {/* Resume Download Button */}
                         <a 

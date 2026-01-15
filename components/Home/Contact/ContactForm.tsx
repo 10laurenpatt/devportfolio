@@ -5,8 +5,8 @@ const ContactForm = () => {
         <h1 className='text-bg bg-linear-to-r from-[#8750f7] to-white text-transparent bg-clip-text inline-block pb-3 text-3xl sm:text-4xl md:text-5xl mg:text-6xl xl:text-7xl font-bold md:leading-[3.5rem] xl:leading-[4rem]'>
             Let's Work Together
         </h1>
-        <p className='text-gray-200 mt-3 lg:text-base text-xs md:text-sm'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea beatae quia excepturi corrupti repellendus. Aliquid!
+        <p className='text-gray-200 mt-3 text-xs md:text-lg'>
+            I’m open to new, full-time developer opportunities. If you think my skills could be a good fit for your team, or you'd just like to connect, feel free to reach out!
         </p>
         {/* Input Fields */}
         <form className='mt-8 block w-full overflow-hidden' action="https://api.web3forms.com/submit" method="POST">

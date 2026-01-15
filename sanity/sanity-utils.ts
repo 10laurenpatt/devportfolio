@@ -14,9 +14,9 @@ export async function getProjects() {
             _id,
             _createdAt,
             name,
+            url,
             description, 
-            "image": image.asset->url,
-            url
+            "image": image.asset->url
         }`
     )
 }

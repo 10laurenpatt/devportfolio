@@ -9,7 +9,7 @@ import ProjectView from '../ProjectView';
 
 export default async function ProjectPage({ params }: { params: { projectId: string } }) {
 
-  const projectId = await params.projectId;
+  const projectId = await params?.projectId;
 
   const project = await getProjectById(projectId)
 

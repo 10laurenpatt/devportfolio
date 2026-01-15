@@ -1,28 +1,24 @@
 import {defineField, defineType} from 'sanity'
 
 
-export const projectType = defineType({
-    name: 'project',
-    title: 'Project',
+export const aboutType = defineType({
+    name: 'about',
+    title: 'About',
     type: 'document',
     fields: [
         defineField({
             name: 'name',
             type: 'string'
         }),
-         defineField({
-            name: 'url',
-            title: 'URL',
-            type: 'url'
-        }),
-        defineField({
-            name: 'image',
-            type: 'image'
-        }),
         defineField({
             name: 'description',
             type: 'array',
             of: [{type: 'block'}]
+        }),
+        defineField({
+            name: 'list',
+            type: 'array',
+            of: [{type: 'string'}]
         })
     ]
 })

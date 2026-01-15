@@ -2,7 +2,7 @@ export const BaseInfo = {
   name: "Lauren Patterson",
   position: "Full Stack Web Developer",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro numquam ad, vero consequuntur aperiam cumque voluptatum pariatur veniam? Qui facilis est ipsam odio cum!",
+    "Hi I'm Lauren Patterson, a passionate full-stack web developer based in Toledo, Ohio. ",
   profilePic: "/images/hero.png",
 };
 
