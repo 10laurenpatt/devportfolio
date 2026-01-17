@@ -13,7 +13,7 @@ const SkillCard = ({ skill }: Props) => {
 
 
     return <div className='p-6 bg-gray-900 hover:bg-blue-900 duration-300 transition-all cursor-pointer text-center rounded-lg'>
-        {skill?.name.includes('nextjs') ?
+        {skill?.name.includes('Next.js') ?
             <div>
                 <div className='bg-gray-100 rounded-full w-[80px] h-[80px] p-1 flex justify-self-center'>
                     <Image src={urlFor(skill.image).quality(100).url()} alt={skill.name} width={80} height={80} className="object-cover mx-auto" />
