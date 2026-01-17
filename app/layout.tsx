@@ -4,6 +4,7 @@ import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
 import ScrollToTop from "@/components/Helper/ScrollToTop";
+import LayoutClient from "@/components/Helper/LayoutClient";
 
 const font = Sora({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
@@ -24,10 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} antialiased`}>
-        <ResponsiveNav />
+        <LayoutClient >
         {children}
-        <Footer />
-        <ScrollToTop />
+        </LayoutClient>
       </body>
     </html>
   );
