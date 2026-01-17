@@ -18,7 +18,7 @@ const Footer = () => {
                     })}
             </div>
             <p className='text-white opacity-75 mt-6 text-center text-sm'>
-                Icons sourced from <Link href='https://github.com/devicons/devicon' className='text-blue-600 visited:text-purple-600 underline'>devicons</Link>
+                Skill icons sourced from <Link href='https://github.com/devicons/devicon' className='text-blue-600 visited:text-purple-600 underline'>devicons</Link>
             </p>
         </div>
     )
