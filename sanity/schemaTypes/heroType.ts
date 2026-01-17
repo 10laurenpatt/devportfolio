@@ -7,7 +7,11 @@ export const heroType = defineType({
     type: 'document',
     fields: [
         defineField({
-            name: 'name',
+            name: 'title1',
+            type: 'string'
+        }),
+        defineField({
+            name: 'title2',
             type: 'string'
         }),
         defineField({
