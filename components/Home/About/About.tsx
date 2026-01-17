@@ -27,8 +27,8 @@ export default async function About() {
                         </div>
                     ) : null}
                     {about[0].list ? (
-                        about[0].list.map((item: string) => {
-                            return <div className='mt-8'>
+                        about[0].list.map((item: string, index: number) => {
+                            return <div className='mt-8' key={index}>
                                 <div className='flex items-center space-x-2 mb-6'>
                                     <div className='w-7 h-7 bg-blue-800 flex flex-col items-center justify-center'>
                                         <FaCheck className='text-white' />

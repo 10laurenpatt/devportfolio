@@ -83,3 +83,24 @@ export async function getAbout() {
         }`
     )
 }
+
+//Services Section Queries
+
+export async function getServices() {
+    const client = createClient({
+        projectId: "pzzzkbm0",
+        dataset: "production",
+        apiVersion: "2025-07-09",
+    });
+
+
+    return client.fetch(
+        groq`*[_type == "service"] {
+            _id,
+            _createdAt,
+            name,
+            description,
+            "image": image.asset->url,
+        }`
+    )
+}
