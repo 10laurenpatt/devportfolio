@@ -9,7 +9,6 @@ import { PortableText } from 'next-sanity';
 export default async function About() {
 
     const about = await getAbout()
-    console.log(about)
 
     return (
         <div className='pt-16 pb-16 bg-[#050709]'>

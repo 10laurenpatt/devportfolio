@@ -124,3 +124,23 @@ export async function getSkills() {
         }`
     )
 }
+
+//Contact Section Queries
+
+export async function getContact() {
+    const client = createClient({
+        projectId: "pzzzkbm0",
+        dataset: "production",
+        apiVersion: "2025-07-09",
+    });
+
+
+    return client.fetch(
+        groq`*[_type == "contact"] {
+            _id,
+            _createdAt,
+            title,
+            description,
+        }`
+    )
+}

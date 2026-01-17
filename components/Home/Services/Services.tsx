@@ -8,7 +8,6 @@ import { SanityImageSource } from '@sanity/image-url/lib/types/types';
 export default async function Services() {
 
     const services = await getServices();
-    console.log(services)
 
     return <div className='pt-16 pb-16 bg-[#0f0715]'>
             <SectionHeading>Services</SectionHeading>
