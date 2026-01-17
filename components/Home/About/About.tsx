@@ -1,11 +1,16 @@
 import React from 'react';
 import SectionHeading from '../../Helper/SectionHeading'
-import { aboutInfo } from '@/data/data';
 import { FaCheck } from 'react-icons/fa';
 import Image from 'next/image';
+import { getAbout } from '@/sanity/sanity-utils';
+import { PortableText } from 'next-sanity';
 
 
-const About = () => {
+export default async function About() {
+
+    const about = await getAbout()
+    console.log(about)
+
     return (
         <div className='pt-16 pb-16 bg-[#050709]'>
             <SectionHeading>About Me</SectionHeading>
@@ -13,33 +18,26 @@ const About = () => {
                 {/* About Text Content */}
                 <div>
                     <h1 className='text-bg bg-linear-to-r from-[#8750f7] to-white text-transparent bg-clip-text inline-block text-3xl sm:text-4xl md:text-5xl mg:text-6xl xl:text-7xl font-bold md:leading-[3.5rem] xl:leading-[4rem]'>
-                        {aboutInfo.title}
+                        {about[0].name}
                     </h1>
-                    <p className='mt-6 text-base text-gray-500'>{aboutInfo.description}</p>
-                    <div className='mt-8'>
-                        <div className='flex items-center space-x-2 mb-6'>
-                            <div className='w-7 h-7 bg-blue-800 flex flex-col items-center justify-center'>
-                                <FaCheck className='text-white' />
-                            </div>
-                            <p className='text-sm sm:text-base md:text-lg font-bold text-gray-300'>Frontend Development</p>
+                    {/* Description */}
+                    {about[0]?.description ? (
+                        <div className='prose mt-6 text-base text-gray-500'>
+                            <PortableText value={about[0].description} />
                         </div>
-                    </div>
-                    <div className='mt-8'>
-                        <div className='flex items-center space-x-2 mb-6'>
-                            <div className='w-7 h-7 bg-blue-800 flex flex-col items-center justify-center'>
-                                <FaCheck className='text-white' />
+                    ) : null}
+                    {about[0].list ? (
+                        about[0].list.map((item: string) => {
+                            return <div className='mt-8'>
+                                <div className='flex items-center space-x-2 mb-6'>
+                                    <div className='w-7 h-7 bg-blue-800 flex flex-col items-center justify-center'>
+                                        <FaCheck className='text-white' />
+                                    </div>
+                                    <p className='text-sm sm:text-base md:text-lg font-bold text-gray-300'>{item}</p>
+                                </div>
                             </div>
-                            <p className='text-sm sm:text-base md:text-lg font-bold text-gray-300'>Backend Development</p>
-                        </div>
-                    </div>
-                    <div className='mt-8'>
-                        <div className='flex items-center space-x-2 mb-6'>
-                            <div className='w-7 h-7 bg-blue-800 flex flex-col items-center justify-center'>
-                                <FaCheck className='text-white' />
-                            </div>
-                            <p className='text-sm sm:text-base md:text-lg font-bold text-gray-300'>UI/UX Design Experience</p>
-                        </div>
-                    </div>
+                        })
+                    ) : null} 
                 </div>
                 {/* Stats Content */}
                 <div className='grid grid-cols-2 gap-16 items-center lg:mx-auto'>
@@ -69,5 +67,3 @@ const About = () => {
         </div>
     )
 }
-
-export default About;
