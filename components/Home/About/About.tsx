@@ -13,15 +13,15 @@ export default async function About() {
     return (
         <div className='pt-16 pb-16 bg-[#050709]'>
             <SectionHeading>About Me</SectionHeading>
-            <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-20'>
+            <div className=' mx-auto grid grid-cols-1 gap-8 mt-20'>
                 {/* About Text Content */}
-                <div>
+                <div className='w-[80%] lg:w-[70%] xl:w-[55%] x mx-auto'>
                     <h1 className='text-bg bg-linear-to-r from-[#8750f7] to-white text-transparent bg-clip-text inline-block text-3xl sm:text-4xl md:text-5xl mg:text-6xl xl:text-7xl font-bold md:leading-[3.5rem] xl:leading-[4rem]'>
                         {about[0].name}
                     </h1>
                     {/* Description */}
                     {about[0]?.description ? (
-                        <div className='prose mt-6 text-base text-gray-500'>
+                        <div className='prose mt-6 text-xl text-white opacity-90'>
                             <PortableText value={about[0].description} />
                         </div>
                     ) : null}
