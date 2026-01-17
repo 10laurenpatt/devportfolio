@@ -104,3 +104,23 @@ export async function getServices() {
         }`
     )
 }
+
+//Skills Section Queries
+
+export async function getSkills() {
+    const client = createClient({
+        projectId: "pzzzkbm0",
+        dataset: "production",
+        apiVersion: "2025-07-09",
+    });
+
+
+    return client.fetch(
+        groq`*[_type == "skill"] {
+            _id,
+            _createdAt,
+            name,
+            "image": image.asset->url,
+        }`
+    )
+}
