@@ -1,5 +1,4 @@
 import SectionHeading from '@/components/Helper/SectionHeading';
-import { servicesData } from '@/data/data';
 import React from 'react';
 import ServiceCard from './ServiceCard';
 import { getServices } from '@/sanity/sanity-utils';

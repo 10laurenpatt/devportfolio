@@ -21,7 +21,7 @@ export default async function Hero() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0f0715] to-[#0f0715]/55" />
             </div>
-            <div className='relative z-10 mx-auto flex min-h-[calc(100vh-6rem)] max-w-5xl flex-col justify-center px-6 text-center'>
+            <div className='relative mx-auto flex min-h-[calc(100vh-6rem)] max-w-5xl flex-col justify-center px-6 text-center'>
                 <div className='grid items-center text-center gap-12'>
                     {/* Text Content */}
                     <div className='align'>

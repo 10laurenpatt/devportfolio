@@ -8,12 +8,12 @@ import Contact from './Contact/Contact';
 
 const Home = () => {
     return <div className="overflow-hidden scroll-smooth">
-        <div id='Hero'><Hero /></div>
-        <div id='About'><About /></div>
-        <div id='Services'><Services /></div>
-        <div id='Projects'><Projects /></div>
-        <div id='Skills'><Skills /></div>
-        <div id='Contact'><Contact /></div>
+        <div id='Hero' className='scroll-mt-[12vh]'><Hero /></div>
+        <div id='About' className='scroll-mt-[12vh]'><About /></div>
+        <div id='Services' className='scroll-mt-[12vh]'><Services /></div>
+        <div id='Projects' className='scroll-mt-[12vh]'><Projects /></div>
+        <div id='Skills' className='scroll-mt-[12vh]'><Skills /></div>
+        <div id='Contact' className='scroll-mt-[12vh]'><Contact /></div>
 
     </div>;
 }

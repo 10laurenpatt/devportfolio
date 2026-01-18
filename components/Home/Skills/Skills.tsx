@@ -1,5 +1,4 @@
 import SectionHeading from "@/components/Helper/SectionHeading";
-import { skillsData } from "@/data/data";
 import React from "react";
 import SkillCard from "./SkillCard";
 import { getSkills } from "@/sanity/sanity-utils";
