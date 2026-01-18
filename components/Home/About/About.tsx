@@ -38,30 +38,6 @@ export default async function About() {
                         })
                     ) : null} 
                 </div>
-                {/* Stats Content */}
-                <div className='grid grid-cols-2 gap-16 items-center lg:mx-auto'>
-                    {/* 4 Stats w/ Icon */}
-                    {/* <div>
-                        <Image src='/images/customer.png' alt='image' width={80} height={80} className='mx-auto' />
-                        <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.client}</p>
-                        <p className='text-base sm:text-lg text-gray-400 text-center'>Satisfied Customers</p>
-                    </div>
-                    <div>
-                        <Image src='/images/experience.png' alt='image' width={80} height={80} className='mx-auto' />
-                        <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.experience}</p>
-                        <p className='text-base sm:text-lg text-gray-400 text-center'>Years Experience</p>
-                    </div>
-                    <div>
-                        <Image src='/images/completed.png' alt='image' width={80} height={80} className='mx-auto' />
-                        <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.project}</p>
-                        <p className='text-base sm:text-lg text-gray-400 text-center'>Completed Projects</p>
-                    </div>
-                    <div>
-                        <Image src='/images/rocket.png' alt='image' width={80} height={80} className='mx-auto' />
-                        <p className='mt-3 font-bold text-xl text-white text-center'>{aboutInfo.website}</p>
-                        <p className='text-base sm:text-lg text-gray-400 text-center'>Websites Launched</p>
-                    </div> */}
-                </div>
             </div>
         </div>
     )
