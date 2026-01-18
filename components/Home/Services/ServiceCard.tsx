@@ -1,5 +1,5 @@
 'use client'
-import { urlFor } from "@/sanity/lib/image";
+import { urlFor } from '../../../lib/sanityClient';
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import { PortableText } from "next-sanity";
 import Image from "next/image";

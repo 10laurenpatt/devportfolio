@@ -3,7 +3,7 @@ import { FaDownload } from 'react-icons/fa';
 import Image from 'next/image';
 import { getHero } from '@/sanity/sanity-utils';
 import { PortableText } from 'next-sanity';
-import { urlFor } from '@/sanity/lib/image';
+import { urlFor } from '../../../lib/sanityClient';
 
 export default async function Hero() {
 
