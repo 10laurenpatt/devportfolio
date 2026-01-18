@@ -17,8 +17,8 @@ const Footer = () => {
                     );
                 })}
             </div>
-            <p className='text-white opacity-75 mt-6 text-center text-sm'>
-                Logo icons sourced from <Link href='https://github.com/devicons/devicon' className='text-blue-600 visited:text-purple-600 underline'>devicons</Link>
+            <p className='text-white opacity-75 mt-6 text-center text-sm mx-4 sm:mx-0'>
+                Logo icons sourced from <Link href='https://github.com/devicons/devicon' className='text-blue-600 visited:text-purple-600 underline'>devicons</Link>  •  Hero photo by <Link className='text-blue-600 visited:text-purple-600 underline' href="https://unsplash.com/@flowforfrank?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ferenc Almasi</Link> on <Link className='text-blue-600 visited:text-purple-600 underline' href="https://unsplash.com/photos/black-flat-screen-computer-monitor-eYpcLDXHVb0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</Link>
             </p>
         </div>
     )
