@@ -21,7 +21,7 @@ export default async function About() {
                     </h1>
                     {/* Description */}
                     {about[0]?.description ? (
-                        <div className='prose mt-6 text-xl text-white opacity-90'>
+                        <div className='prose mt-6 text-sm sm:text-md lg:text-lg text-white opacity-90'>
                             <PortableText value={about[0].description} />
                         </div>
                     ) : null}
