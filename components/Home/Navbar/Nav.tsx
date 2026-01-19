@@ -1,6 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react'
-import Image from 'next/image';
+import React from 'react'
 import Link from 'next/link';
 import { navLinks } from '@/constant/constant';
 import { HiBars3BottomRight } from 'react-icons/hi2';

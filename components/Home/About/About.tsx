@@ -1,7 +1,6 @@
 import React from 'react';
 import SectionHeading from '../../Helper/SectionHeading'
 import { FaCheck } from 'react-icons/fa';
-import Image from 'next/image';
 import { getAbout } from '@/sanity/sanity-utils';
 import { PortableText } from 'next-sanity';
 

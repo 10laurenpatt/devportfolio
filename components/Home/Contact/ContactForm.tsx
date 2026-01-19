@@ -1,10 +1,9 @@
-import { PortableText } from "next-sanity";
+import { PortableText, PortableTextBlock } from "next-sanity";
 import React from "react";
-import { TypedObject } from "sanity";
 
 type Props = {
     contact: {
-        _id: any; title: string; description: any;
+        _id: string; title: string; description: PortableTextBlock;
     }
 }
 

@@ -5,7 +5,7 @@ import React from "react";
 
 type Props = {
     skill: {
-        _id: any; name: string; image: SanityImageSource;
+        _id: string; name: string; image: SanityImageSource;
     }
 }
 

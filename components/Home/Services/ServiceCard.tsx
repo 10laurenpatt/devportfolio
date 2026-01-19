@@ -5,10 +5,12 @@ import { PortableText } from "next-sanity";
 import Image from "next/image";
 import React from "react";
 import Tilt from 'react-parallax-tilt'
+import { PortableTextBlock } from '@portabletext/types'
+
 
 type Props = {
     service: {
-        _id: any; name: string; description: any; image: SanityImageSource;
+        _id: string; name: string; description: PortableTextBlock; image: SanityImageSource;
     }
 }
 
