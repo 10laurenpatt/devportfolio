@@ -1,14 +1,18 @@
 import SectionHeading from "@/components/Helper/SectionHeading";
-import { skillsData } from "@/data/data";
 import React from "react";
 import SkillCard from "./SkillCard";
+import { getSkills } from "@/sanity/sanity-utils";
+import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
-const Skills = () => {
+export default async function Skills() {
+
+    const skills = await getSkills();
+
     return <div className='pt-16 pb-16 bg-[#0f0715]'>
         <SectionHeading>Skills</SectionHeading>
         <div className='mt-20 w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 items-center'>
-            {skillsData.map((skill) => {
-                return <div key={skill.id}>
+            {skills?.map((skill: { _id: string; name: string; image: SanityImageSource; }) => {
+                return <div key={skill._id}>
                     {/* Skill Card */}
                     <SkillCard skill={skill}/>
                 </div>
@@ -16,5 +20,3 @@ const Skills = () => {
         </div>
     </div>
 }
-
-export default Skills

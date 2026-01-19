@@ -1,10 +1,9 @@
 import SectionHeading from "@/components/Helper/SectionHeading";
-import { projectData } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { getProjects } from "@/sanity/sanity-utils";
-import { urlFor } from "@/sanity/lib/image";
+import { urlFor } from '../../../lib/sanityClient';
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
 

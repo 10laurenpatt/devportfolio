@@ -19,10 +19,10 @@ export const navLinks = [
         url:"/#Projects",
         label: "Projects"
     },
-    {
+        {
         id:5,
-        url:"#",
-        label: "Reviews"
+        url:"/#Skills",
+        label: "Skills"
     },
     {
         id:6,

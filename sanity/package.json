@@ -1,0 +1,21 @@
+{
+  "name": "sanity",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "sanity start",
+    "build": "sanity build ./dist",
+    "start": "sanity start --no-watch",
+    "deploy": "sanity deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "styled-components": "^6.3.8"
+  }
+}
