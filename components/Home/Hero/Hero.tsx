@@ -13,7 +13,7 @@ export default async function Hero() {
         <div className='relative w-full min-h-screen pt-[4vh] md:pt-[12vh] overflow-hidden'>
             <div className="absolute inset-0 -z-10">
                 <Image
-                    src={urlFor(hero[0].image).quality(100).url()}
+                    src={urlFor(hero.data[0].image).quality(100).url()}
                     alt="An image of code"
                     fill
                     className="object-cover"
@@ -27,15 +27,15 @@ export default async function Hero() {
                     <div className='align'>
                         {/* Title */}
                         <h1 className='text-bg bg-linear-to-r from-[#8750f7] to-white text-transparent bg-clip-text inline-block mb-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3.5rem] xl:leading-[4rem]'>
-                            {hero[0].title1}
+                            {hero.data[0].title1}
                         </h1>
                         <h1 className='text-bg bg-linear-to-r from-[#8750f7] to-white text-transparent bg-clip-text inline-block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3.5rem] xl:leading-[4rem]'>
-                            {hero[0].title2}
+                            {hero.data[0].title2}
                         </h1>
                         {/* Description */}
-                        {hero[0]?.description ? (
+                        {hero?.data[0].description ? (
                             <div className='prose mt-6 text-sm sm:text-md md:text-xl text-white opacity-80'>
-                                <PortableText value={hero[0].description} />
+                                <PortableText value={hero.data[0].description} />
                             </div>
                         ) : null}
                         <div className="flex gap-4 justify-center mt-8">

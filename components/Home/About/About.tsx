@@ -16,16 +16,16 @@ export default async function About() {
                 {/* About Text Content */}
                 <div className='w-[80%] lg:w-[70%] xl:w-[55%] x mx-auto'>
                     <h1 className='text-bg bg-linear-to-r from-[#8750f7] to-white text-transparent bg-clip-text inline-block text-3xl sm:text-4xl md:text-5xl mg:text-6xl xl:text-7xl font-bold md:leading-[3.5rem] xl:leading-[4rem]'>
-                        {about[0].name}
+                        {about.data[0].name}
                     </h1>
                     {/* Description */}
-                    {about[0]?.description ? (
+                    {about?.data[0].description ? (
                         <div className='prose mt-6 text-sm sm:text-md lg:text-lg text-white opacity-90'>
-                            <PortableText value={about[0].description} />
+                            <PortableText value={about.data[0].description} />
                         </div>
                     ) : null}
-                    {about[0].list ? (
-                        about[0].list.map((item: string, index: number) => {
+                    {about.data[0].list ? (
+                        about.data[0].list.map((item: string, index: number) => {
                             return <div className='mt-8' key={index}>
                                 <div className='flex items-center space-x-2 mb-6'>
                                     <div className='w-7 h-7 bg-blue-800 flex flex-col items-center justify-center'>

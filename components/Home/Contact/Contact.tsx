@@ -12,7 +12,7 @@ export default async function Contact() {
         <div className='grid grid-cols-1 w-[90%] sm:w-[80%] lg:w-[65%] xl:w-[50%] mx-auto items-center gap-10 mt-10 '>
             {/* Contact Form */}
             <div>
-                <ContactForm contact={contact[0]}/>
+                <ContactForm contact={contact.data}/>
             </div>
         </div>
 
