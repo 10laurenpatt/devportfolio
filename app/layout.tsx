@@ -10,8 +10,8 @@ const font = Sora({
 
 //SEO
 export const metadata: Metadata = {
-  title: "Lauren's Portfolio",
-  description: "Web Developer Portfolio Created with Next.js",
+  title: "Lauren Patterson",
+  description: "Software Developer Portfolio of Lauren Patterson",
 };
 
 export default function RootLayout({
